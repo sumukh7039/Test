@@ -1,0 +1,60 @@
+---
+layout: default
+title: Events
+---
+
+<link rel="stylesheet" href="assets/css/event.css">
+<script defer src="assets/js/events.js"></script>
+<body>  
+                
+      <!-- Events -->
+      <div class="colorlib-intro">
+        <div class="container" id="events-div">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 text-center colorlib-heading animate-box">
+                    
+                </div>
+            </div>
+              <div class="row">
+                  <div class="animate-box fadeInUp animated-fast " id="events">
+
+                      {% for test1 in site.data.events %}
+                      <div class="col-md-6">
+                        <div class="event-card" >
+                          <div class="event-content">
+                            <p class="name">
+
+                              {% for events in test1 %}
+                              
+                              <strong>
+                              {{events.title}}
+                              </strong>
+                              
+                              {% endfor %}
+                              
+                            </p>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      
+                      {% endfor %}
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      
+      <button data-modal-target="#modal">Read More</button>
+      <div class="modal" id="modal">
+          <div class="modal-header">
+              <div class="title">Eample Model</div>
+              <button data-close-button class="close-button" >&times;</button>
+          </div>
+          <div class="modal-body">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quae possimus fugiat, qui corrupti voluptas atque voluptate minus fugit magni veniam aliquam perspiciatis maxime unde laudantium in! Iure distinctio ipsum dicta! Nam debitis aliquid iusto rerum laboriosam vero et illum voluptas aliquam similique, omnis maiores, quam atque vitae voluptatibus soluta.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellat eum sint aperiam nihil id perspiciatis aut laborum eligendi ipsum, voluptatum atque voluptas amet iste architecto dolore, repellendus, quia a?
+          </div>
+      </div>
+      <div id="overlay"></div>
+</body>
