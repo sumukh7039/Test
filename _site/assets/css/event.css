@@ -58,7 +58,7 @@
   }
 }
 
-.modal {
+/* .modal {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -66,7 +66,7 @@
   transition: 200ms ease-in-out;
   border: 1px solid black;
   border-radius: 10px;
-  z-index: 10;
+  z-index: 700;
   background-color: white;
   width: 500px;
   max-width: 80%;
@@ -108,7 +108,7 @@
 
 .modal-body {
   padding: 10px 15px;
-}
+} */
 
 #overlay {
   position: fixed;
